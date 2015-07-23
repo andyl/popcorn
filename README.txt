@@ -1,5 +1,7 @@
 EDITING NOTES
 
+Overview:
+
 - Code repository is at http://github.com/andyl/popcorn
 
 - Two repository branches:
@@ -19,6 +21,7 @@ EDITING NOTES
 - Public website at http://connor-leak.com 
 
 Workflow:
+
 1) './pull' to merge other's edits
 2) edit 'index.html' and test locally
 3) './push' to publish your changes
