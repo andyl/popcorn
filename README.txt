@@ -16,7 +16,7 @@ EDITING NOTES
 
 - To test locally, type 'open index.html'
 
-- Live website at http://connor-leak.com 
+- Public website at http://connor-leak.com 
 
 Workflow:
 1) './pull' to merge other's edits
