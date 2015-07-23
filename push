@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git commit -am \'update by ${LOGNAME}\'
+git push
+
