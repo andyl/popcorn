@@ -1,5 +1,5 @@
 # popcorn
 
-static website!
+static website
 
 http://andyl.github.io/popcorn/
