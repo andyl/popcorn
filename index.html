@@ -18,6 +18,34 @@
         font-weight: bold;
         color: black;
       }
+      .youtube-responsive{
+        padding: 0;
+        margin: 0;
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+      }
+      .youtube-responsive iframe{
+        border: 0;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+      } 
+      .vimeo-responsive{
+        overflow:hidden;
+        padding-bottom:41.84%;
+        position:relative;
+      }
+      .vimeo-responsive iframe{
+        border: 0;
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+      } 
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
@@ -31,7 +59,9 @@
         <a href="#graphics">Graphics</a><br/>
         <a href="#availability">Availability</a><br/>
         <p></p>
+        <div class='img-responsive'>
         <img src="img3/cam1.jpg" width="100%">
+        </div>
       </header>
 
       <section>
@@ -43,34 +73,47 @@
           Filmography
         </h3>
 
-        <p>Daddy Issues, Student Short Film; Director of Photography<br/>
-        <iframe id="aaa" width="640" height="272" src="https://player.vimeo.com/video/336938092" frameborder="0" allow="autoplay; " allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Summer 7, Independent Short Film; Director, Writer, Producer, Actor, Graphic Designer
+        <div class='youtube-responsive'>
+          <iframe src="https://www.youtube.com/embed/1QqMuypFRnI" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+        </div>
 
-        <p>Summer 7, Independent Short Film; Director, Writer, Producer, Actor, Graphic Designer<br/>
-        <iframe id="bbb" width="440" height="280" src="https://www.youtube.com/embed/1QqMuypFRnI" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Daddy Issues, Student Short Film; Director of Photography
+        <div class='vimeo-responsive'>
+            <iframe src="https://player.vimeo.com/video/336938092" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-        <p>Rebirth, Student Short Film; Director of Photography<br/>
-        <iframe width="440" height="280" src="https://www.youtube.com/embed/VVqon_H-RDc" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Rebirth, Student Short Film; Director of Photography
+        <div class='youtube-responsive'>
+          <iframe src="https://www.youtube.com/embed/VVqon_H-RDc" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+        </div>
 
-        <p>Let's Take a Chat: College Talk Show, <a href="https://www.youtube.com/channel/UCIt6bHWT_lsl6HcN4AaLkVQ" target="_blank">Youtube Webseries</a>; Creator<br/>
-          <img src="img2/Card_crop.jpg" width="440">
-        </p>
+        <p></p>
+        Let's Take a Chat: College Talk Show, <a href="https://www.youtube.com/channel/UCIt6bHWT_lsl6HcN4AaLkVQ" target="_blank">Youtube Webseries</a>; Creator<br/>
+        <img src="img2/Card_crop.jpg" width=100%>
 
-        <p>Plumberboiz, Student Short Film; Writer<br/>
-        <iframe width="440" height="280" src="https://www.youtube.com/embed/Q3N2jaJUfxU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Plumberboiz, Student Short Film; Writer
+        <div class='youtube-responsive'>
+        <iframe src="https://www.youtube.com/embed/Q3N2jaJUfxU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
-        <p>Cat in the Box, Student Short Film; Writer<br/>
-        <iframe width="440" height="280" src="https://www.youtube.com/embed/kGrDI3-dKHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Cat in the Box, Student Short Film; Writer
+        <div class='youtube-responsive'>
+        <iframe src="https://www.youtube.com/embed/kGrDI3-dKHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
-        <p>Experimental Film: "Look Behind You"<br/>
-        <iframe width="440" height="280" src="https://www.youtube.com/embed/v4QdyKARado" frameborder="0" allowfullscreen></iframe>
-        </p>
+        <p></p>
+        Experimental Film: "Look Behind You"<br/>
+        <div class='youtube-responsive'>
+        <iframe src="https://www.youtube.com/embed/v4QdyKARado" frameborder="0" allowfullscreen></iframe>
+        </div>
 
+        <p></p>
         <h3>
           <a id="graphics" class="anchor" name="equipment" aria-hidden="true">
             <span class="octicon octicon-link"></span>
@@ -110,16 +153,16 @@
     <!-- Matomo -->
     <script type="text/javascript">
       var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//matomo.casmacc.net/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="//matomo.casmacc.net/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', '2']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
     </script>
     <!-- End Matomo Code -->
 
